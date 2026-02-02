@@ -1,0 +1,59 @@
+body {
+  font-family: 'Avenir', sans-serif;
+  background: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;              /* makes it round */
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* YES button – pink */
+#yes {
+  background: #ff4d6d;             /* pink */
+}
+
+/* NO button – red */
+#no {
+  background: #e63946;             /* red */
+  position: absolute;
+}
+
+/* Hover effect (subtle, not cringe) */
+button:hover {
+  transform: scale(1.08);
+}
+
+.hidden {
+  display: none;
+}
+
+#thankYou {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
